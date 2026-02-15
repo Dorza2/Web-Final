@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog | Bibliophile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="sell-book.html">Sell a Book</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container catalog-layout">
+        <aside class="filters">
+            <h3>Filter Books</h3>
+            <div class="filter-group">
+                <label>Genre</label>
+                <select id="filterGenre">
+                    <option value="all">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="history">History</option>
+                    <option value="rarity">Rarities</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Max Price: <span id="priceVal">500</span> NIS</label>
+                <input type="range" id="filterPrice" min="0" max="500" value="500">
+            </div>
+            <button class="btn secondary" id="applyFilters">Apply Filters</button>
+        </aside>
+
+        <section class="catalog-grid">
+            <h2 class="section-title">Available Collection</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-img" style="background-image: url('levia_lochemet1_master.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Levia Lochemet</h3>
+                        <p class="price">120 NIS</p>
+                        <a href="book_desc.html" class="btn secondary">View Details</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('hamushbaim_master.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Hamushbaim</h3>
+                        <p class="tag"></p>
+                        <p class="price">90 NIS</p>
+                        <button class="btn secondary" title="Detailed view not implemented" onClick="alert('Not implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('beauty_queen.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Beauty Queen</h3>
+                        <p class="tag"></p>
+                        <p class="price">100 NIS</p>
+                        <button class="btn secondary" title="Detailed view not implemented" onClick="alert('Not implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('son_of_hamas.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Son of Hamas</h3>
+                        <p class="tag"></p>
+                        <p class="price">140 NIS</p>
+                        <button class="btn secondary" title="Detailed view not implemented" onClick="alert('Not implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('tuesdays_with_mori.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Tuesdays with Mori</h3>
+                        <p class="tag"></p>
+                        <p class="price">80 NIS</p>
+                        <button class="btn secondary" title="Detailed view not implemented" onClick="alert('Not implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('rich_dad_poor_dad.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Rich Dad Poor Dad</h3>
+                        <p class="tag"></p>
+                        <p class="price">100 NIS</p>
+                        <button class="btn secondary" title="Detailed view not implemented" onClick="alert('Not implemented')">View Details</button>
+                    </div>
+                </article>
+
+                </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bibliophile | Group 107</p>
+            <p class="small">Academic College of Tel Aviv-Yaffo</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

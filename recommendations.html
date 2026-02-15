@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations | Bibliophile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="sell-book.html">Sell a Book</a></li>
+                <li><a href="recommendations.html" class="active">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="rec-section">
+            <h2 class="section-title">🏆 Top 3 Best Sellers</h2>
+            <div class="grid">
+                <article class="card gold-border">
+                    <div class="card-img" style="background-image: url('levia_lochemet1_master.jpg');"></div>
+                    <div class="card-content">
+                        <h3>The Lioness</h3>
+                        <p class="price">120 NIS</p>
+                        <span class="badge">#1 Best Seller</span>
+                        <button class="btn secondary select-book" data-name="The Lioness 2"><a href =book_desc.html>View Details</a></button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('rich_dad_poor_dad.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Rich Dad Poor Dad</h3>
+                        <p class="price">100 NIS</p>
+                        <button class="btn secondary select-book" data-name="Rich Dad Poor Dad" onclick="alert('Not Implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('tuesdays_with_mori.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Tuesdays with Morrie</h3>
+                        <p class="price">80 NIS</p>
+                        <button class="btn secondary select-book" data-name="Tuesdays with Morrie" onclick="alert('Not Implemented')">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="rec-section preference-bg">
+            <h2 class="section-title">Based on Your Interests</h2>
+            <p class="pref-note"></p>
+            <div class="grid" id="personalizedGrid">
+                <article class="card">
+                    <div class="card-img" style="background-image: url('levia_lochemet2_master.jpg');"></div>
+                    <div class="card-content">
+                        <h3>The Lioness 2</h3>
+                        <p class="price">140 NIS</p>
+                        <button class="btn secondary select-book" data-name="The Lioness 2" onclick="alert('Not Implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('legendary_lion.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Legendary Lion</h3>
+                        <p class="price">100 NIS</p>
+                        <button class="btn secondary select-book" data-name="Legendary Lion" onclick="alert('Not Implemented')">View Details</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background-image: url('journey_to_freedom.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Journey to Freedom</h3>
+                        <p class="price">90 NIS</p>
+                        <button class="btn secondary select-book" data-name="Journey to Freedom" onclick="alert('Not Implemented')">View Details</button>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bibliophile | Group 107</p>
+            <p class="small">Academic College of Tel Aviv-Yaffo</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

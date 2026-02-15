@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Book | Bibliophile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="sell-book.html" class="active">Sell a Book</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+    <section class="form-container">
+        <header>
+            <h2>List a Book for Sale</h2>
+            <p>No account needed! Just provide your details so buyers can contact you.</p>
+        </header>
+
+        <form id="sellBookForm" action="sell_book.php" method="POST" class="pro-form">
+            <div class="form-group">
+                <label for="bookTitle">Book Title</label>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="e.g. Moby Dick">
+            </div>
+
+            <div class="form-group">
+                <label for="bookPrice">Asking Price (NIS)</label>
+                <input type="number" id="bookPrice" name="bookPrice" placeholder="Enter amount">
+            </div>
+
+            <div class="form-group">
+                <label for="sellerName">Full Name</label>
+                <input type="text" id="sellerName" name="sellerName" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label for="sellerEmail">Email Address</label>
+                <input type="email" id="sellerEmail" name="sellerEmail" placeholder="email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="sellerPhone">Phone Number</label>
+                <input type="tel" id="sellerPhone" name="sellerPhone" placeholder="050-1234567">
+            </div>
+
+            <button type="submit" class="btn primary-btn">List Book Now</button>
+        </form>
+        
+        <div id="feedbackMessage" class="feedback"></div>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
